@@ -14,7 +14,7 @@ def pushbutton():
 
 ttk.Label(mainwindow, text="User Name:").grid(column=0, row=0)
 
-name = tk.StringVar()
+name = tk.StringVar()  # Tkinter isn't dynamically typed like Python proper
 name_entered = ttk.Entry(mainwindow, width=24, textvariable=name)
 name_entered.grid(column=0, row=1)
 
