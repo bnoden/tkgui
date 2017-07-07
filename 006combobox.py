@@ -8,13 +8,15 @@ mainwindow.title("Combo box")
 label1 = ttk.Label(mainwindow, text="Label")
 label1.grid(column=0, row=0)
 
+name = tk.StringVar()  # Tkinter isn't dynamically typed like Python proper
+fontsize = tk.StringVar()
+
 
 def pushbutton():
     act.configure(text="Size: " + fontsize.get())
 
 # ------------------- Textbox ---------------------------
 ttk.Label(mainwindow, text="User Name:").grid(column=0, row=0)
-name = tk.StringVar()  # Tkinter isn't dynamically typed like Python proper
 
 name_entered = ttk.Entry(mainwindow, width=24, textvariable=name)
 name_entered.grid(column=0, row=1)
@@ -25,7 +27,6 @@ act.grid(column=2, row=1)
 
 # -------------------- Combo box ------------------------
 ttk.Label(mainwindow, text="Size:").grid(column=1, row=0)
-fontsize = tk.StringVar()
 
 fontsize_selected = ttk.Combobox(mainwindow,
                                  width=12, textvariable=fontsize)
