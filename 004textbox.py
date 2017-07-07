@@ -21,4 +21,6 @@ name_entered.grid(column=0, row=1)
 act = ttk.Button(mainwindow, text="button", command=pushbutton)
 act.grid(column=1, row=1)
 
+name_entered.focus()
+
 mainwindow.mainloop()
